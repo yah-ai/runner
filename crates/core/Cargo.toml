@@ -1,0 +1,48 @@
+[package]
+name = "yah-runner-core"
+version = "0.8.43"
+edition = "2021"
+authors = ["yah Dev <human@yah.dev>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yah-ai/runner"
+description = "Core types and traits for the yah agent runner"
+readme = "../../README.md"
+keywords = ["agent", "llm", "runtime"]
+categories = ["development-tools"]
+
+# Deliberately small: std + serde + thiserror + async-trait. No tokio runtime,
+# HTTP only behind the default `reqwest` feature (the `HttpClient` trait itself
+# is substrate-free), and filesystem only behind the non-wasm32 target block below — core must check on wasm32-unknown-unknown and
+# aarch64-apple-ios (R950-T11). tokio-util is here only for the
+# `CancellationToken` in `ToolRegistry::bind_cancel`; it pulls tokio with the
+# `sync` feature alone, which wasm32 carries.
+[dependencies]
+async-trait = "0.1"
+blake3 = "1.5"
+bytes = "1"
+futures-core = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+# R950-F6: the provider resolvers log probe/model-list fallbacks, and the
+# OpenRouter usage query joins two requests.
+tracing = "0.1"
+futures-util = { version = "0.3", default-features = false, features = ["async-await-macro"] }
+tokio-util = { version = "0.7", default-features = false }
+# R950-F5: the default `HttpClient` substrate. Optional so a wasm / iOS host
+# builds with `--no-default-features` and supplies its own.
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "stream"], optional = true }
+
+[features]
+default = ["reqwest"]
+reqwest = ["dep:reqwest"]
+
+# R950-F4: the filesystem defaults (`FsSessionStore`, `FsUsageStore`) are the
+# only file I/O in core, and they compile off wasm32 only. Their root
+# directory is always a constructor argument — core never resolves a host
+# path (no `directories`, no camp root).
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tokio = { version = "1", default-features = false, features = ["fs", "io-util", "sync"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["fs", "io-util", "macros", "rt", "sync"] }

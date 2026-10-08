@@ -1,0 +1,181 @@
+{
+  "version": "2",
+  "presets": {
+    "anthropic": {
+      "models": [
+        { "id": "opus",                      "label": "Opus (latest)",            "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "sonnet",                    "label": "Sonnet (latest)",          "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "haiku",                     "label": "Haiku (latest)",           "supportsThinking": false, "contextLimit":  200000, "pricingCliff": null,   "tier": "slim" },
+        { "id": "claude-fable-5-1",          "label": "Claude Fable 5.1",         "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-5",             "label": "Claude Opus 5",            "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-4-8",           "label": "Claude Opus 4.8",          "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-4-7",           "label": "Claude Opus 4.7",          "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-sonnet-5",           "label": "Claude Sonnet 5",          "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "claude-sonnet-4-6",         "label": "Claude Sonnet 4.6",        "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "claude-sonnet-4-6[1m]",     "label": "Claude Sonnet 4.6 (1M)",   "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": 200000, "tier": "mid"  },
+        { "id": "claude-haiku-4-5-20251001", "label": "Claude Haiku 4.5",         "supportsThinking": false, "contextLimit":  200000, "pricingCliff": null,   "tier": "slim" }
+      ]
+    },
+    "crab": {
+      "models": [
+        { "id": "opus",                      "label": "Opus (latest)",            "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "sonnet",                    "label": "Sonnet (latest)",          "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "haiku",                     "label": "Haiku (latest)",           "supportsThinking": false, "contextLimit":  200000, "pricingCliff": null,   "tier": "slim" },
+        { "id": "claude-fable-5-1",          "label": "Claude Fable 5.1",         "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-5",             "label": "Claude Opus 5",            "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-4-8",           "label": "Claude Opus 4.8",          "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-4-7",           "label": "Claude Opus 4.7",          "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-sonnet-5",           "label": "Claude Sonnet 5",          "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "claude-sonnet-4-6",         "label": "Claude Sonnet 4.6",        "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "claude-sonnet-4-6[1m]",     "label": "Claude Sonnet 4.6 (1M)",   "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": 200000, "tier": "mid"  },
+        { "id": "claude-haiku-4-5-20251001", "label": "Claude Haiku 4.5",         "supportsThinking": false, "contextLimit":  200000, "pricingCliff": null,   "tier": "slim" }
+      ]
+    },
+    "claude": {
+      "models": [
+        { "id": "opus",                      "label": "Opus (latest)",            "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "sonnet",                    "label": "Sonnet (latest)",          "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "haiku",                     "label": "Haiku (latest)",           "supportsThinking": false, "contextLimit":  200000, "pricingCliff": null,   "tier": "slim" },
+        { "id": "claude-fable-5-1",          "label": "Claude Fable 5.1",         "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-5",             "label": "Claude Opus 5",            "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-4-8",           "label": "Claude Opus 4.8",          "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-opus-4-7",           "label": "Claude Opus 4.7",          "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null,   "tier": "full" },
+        { "id": "claude-sonnet-5",           "label": "Claude Sonnet 5",          "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "claude-sonnet-4-6",         "label": "Claude Sonnet 4.6",        "supportsThinking": true,  "contextLimit":  200000, "pricingCliff": null,   "tier": "mid"  },
+        { "id": "claude-sonnet-4-6[1m]",     "label": "Claude Sonnet 4.6 (1M)",   "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": 200000, "tier": "mid"  },
+        { "id": "claude-haiku-4-5-20251001", "label": "Claude Haiku 4.5",         "supportsThinking": false, "contextLimit":  200000, "pricingCliff": null,   "tier": "slim" }
+      ]
+    },
+    "openai-oauth": {
+      "models": [
+        { "id": "gpt-6-astra",   "label": "GPT-6-Astra",   "supportsThinking": true, "contextLimit": 272000, "pricingCliff": null, "tier": "full" },
+        { "id": "gpt-5.6-sol",   "label": "GPT-5.6-Sol",   "supportsThinking": true, "contextLimit": 272000, "pricingCliff": null, "tier": "full" },
+        { "id": "gpt-5.6-terra", "label": "GPT-5.6-Terra", "supportsThinking": true, "contextLimit": 272000, "pricingCliff": null, "tier": "full" },
+        { "id": "gpt-5.6-luna",  "label": "GPT-5.6-Luna",  "supportsThinking": true, "contextLimit": 272000, "pricingCliff": null, "tier": "mid"  },
+        { "id": "gpt-5.5",       "label": "GPT-5.5",       "supportsThinking": true, "contextLimit": 272000, "pricingCliff": null, "tier": "mid"  }
+      ]
+    },
+    "openai": {
+      "models": [
+        { "id": "gpt-4o",      "label": "GPT-4o",      "supportsThinking": false, "contextLimit": 131072, "pricingCliff": null, "tier": "full" },
+        { "id": "gpt-4o-mini", "label": "GPT-4o Mini", "supportsThinking": false, "contextLimit": 131072, "pricingCliff": null, "tier": "mid"  },
+        { "id": "o3",          "label": "o3",          "supportsThinking": true,  "contextLimit": 200000, "pricingCliff": null, "tier": "full" },
+        { "id": "o3-mini",     "label": "o3 Mini",     "supportsThinking": true,  "contextLimit": 200000, "pricingCliff": null, "tier": "mid"  }
+      ],
+      "byEndpointId": {
+        "ollama-local": {
+          "models": [
+            { "id": "qwen3.5", "label": "Qwen 3.5",  "supportsThinking": true,  "contextLimit": 131072, "pricingCliff": null, "tier": "full" },
+            { "id": "gemma4",  "label": "Gemma 4",   "supportsThinking": false, "contextLimit": 131072, "pricingCliff": null, "tier": "mid"  }
+          ]
+        },
+        "ollama-cloud": {
+          "models": [
+            { "id": "kimi-k2.6:cloud",    "label": "Kimi K2.6",     "supportsThinking": true,  "contextLimit": 262144, "pricingCliff": null, "tier": "full" },
+            { "id": "qwen3.5:cloud",      "label": "Qwen 3.5",      "supportsThinking": true,  "contextLimit": 131072, "pricingCliff": null, "tier": "full" },
+            { "id": "glm-5.1:cloud",      "label": "GLM 5.1",       "supportsThinking": true,  "contextLimit": 131072, "pricingCliff": null, "tier": "full" },
+            { "id": "minimax-m2.7:cloud", "label": "MiniMax M2.7",  "supportsThinking": false, "contextLimit": 262144, "pricingCliff": null, "tier": "full" }
+          ]
+        }
+      }
+    },
+    "deepseek": {
+      "models": [
+        { "id": "deepseek-chat",       "label": "DeepSeek Chat",       "supportsThinking": false, "contextLimit":  131072, "pricingCliff": null, "tier": "full" },
+        { "id": "deepseek-v4-pro",     "label": "DeepSeek v4 Pro",     "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null, "tier": "full" },
+        { "id": "deepseek-v4-flash",   "label": "DeepSeek v4 Flash",   "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null, "tier": "full" }
+      ]
+    },
+    "kimi": {
+      "models": [
+        { "id": "kimi-k2.7-code",            "label": "Kimi K2.7 Code",            "supportsThinking": true,  "contextLimit":  262144, "pricingCliff": null, "tier": "full" },
+        { "id": "kimi-k2.7-code-highspeed",  "label": "Kimi K2.7 Code Highspeed",  "supportsThinking": true,  "contextLimit":  262144, "pricingCliff": null, "tier": "full" },
+        { "id": "kimi-k2.6",                 "label": "Kimi K2.6",                 "supportsThinking": true,  "contextLimit":  262144, "pricingCliff": null, "tier": "full" },
+        { "id": "kimi-k2.6-thinking",        "label": "Kimi K2.6 Thinking",        "supportsThinking": true,  "contextLimit":  262144, "pricingCliff": null, "tier": "full" },
+        { "id": "kimi-k3",                   "label": "Kimi K3",                   "supportsThinking": true,  "contextLimit": 1000000, "pricingCliff": null, "tier": "full" },
+        { "id": "moonshot-v1-8k",            "label": "Moonshot v1 8K",            "supportsThinking": false, "contextLimit":    8192, "pricingCliff": null, "tier": "slim" },
+        { "id": "moonshot-v1-32k",           "label": "Moonshot v1 32K",           "supportsThinking": false, "contextLimit":   32768, "pricingCliff": null, "tier": "mid"  },
+        { "id": "moonshot-v1-128k",          "label": "Moonshot v1 128K",          "supportsThinking": false, "contextLimit":  131072, "pricingCliff": null, "tier": "full" }
+      ]
+    },
+    "mcp-connect": {
+      "models": []
+    }
+  },
+
+  "prefixes": [
+    { "prefix": "claude-opus-5",         "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "claude-opus-4-8",       "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "claude-opus-4-7",       "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "claude-opus-4-6",       "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "claude-sonnet-4-6[1m]", "contextLimit": 1000000, "pricingCliff": 200000, "tier": "mid" },
+
+    { "prefix": "claude-fable-5-1",  "contextLimit": 200000, "tier": "full" },
+    { "prefix": "claude-fable-5",    "contextLimit": 200000, "tier": "full" },
+    { "prefix": "claude-opus-4",     "contextLimit": 200000, "tier": "full" },
+    { "prefix": "claude-sonnet-5",   "contextLimit": 200000, "tier": "mid"  },
+    { "prefix": "claude-sonnet-4",   "contextLimit": 200000, "tier": "mid"  },
+    { "prefix": "claude-haiku-4",    "contextLimit": 200000, "tier": "slim" },
+    { "prefix": "claude-3-7-sonnet", "contextLimit": 200000, "tier": "mid"  },
+    { "prefix": "claude-3-5-sonnet", "contextLimit": 200000, "tier": "mid"  },
+    { "prefix": "claude-3-5-haiku",  "contextLimit": 200000, "tier": "slim" },
+    { "prefix": "claude-3-opus",     "contextLimit": 200000, "tier": "full" },
+    { "prefix": "claude-3-sonnet",   "contextLimit": 200000, "tier": "mid"  },
+    { "prefix": "claude-3-haiku",    "contextLimit": 200000, "tier": "slim" },
+
+    { "prefix": "deepseek-v4-pro",   "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "deepseek-v4-flash", "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "deepseek-chat",     "contextLimit": 131072,  "tier": "full" },
+    { "prefix": "deepseek-reasoner", "contextLimit": 131072,  "tier": "full" },
+    { "prefix": "deepseek-r1",       "contextLimit": 131072 },
+    { "prefix": "deepseek-v3",       "contextLimit": 131072 },
+
+    { "prefix": "gpt-6-astra",       "contextLimit": 272000,  "tier": "full" },
+    { "prefix": "gpt-5.6-sol",       "contextLimit": 272000,  "tier": "full" },
+    { "prefix": "gpt-5.6-terra",     "contextLimit": 272000,  "tier": "full" },
+    { "prefix": "gpt-5.6-luna",      "contextLimit": 272000,  "tier": "mid"  },
+    { "prefix": "gpt-5.5",           "contextLimit": 272000,  "tier": "mid"  },
+    { "prefix": "gpt-4o",            "contextLimit": 131072,  "tier": "full" },
+    { "prefix": "gpt-4-turbo",       "contextLimit": 131072 },
+    { "prefix": "gpt-4.1",           "contextLimit": 1000000 },
+    { "prefix": "gpt-4-32k",         "contextLimit": 32768 },
+    { "prefix": "gpt-4",             "contextLimit": 8192 },
+    { "prefix": "o1",                "contextLimit": 200000 },
+    { "prefix": "o3",                "contextLimit": 200000,  "tier": "full" },
+    { "prefix": "gpt-3.5-turbo-16k", "contextLimit": 16384 },
+    { "prefix": "gpt-3.5-turbo",     "contextLimit": 4096 },
+
+    { "prefix": "llama-3.3",   "contextLimit": 131072 },
+    { "prefix": "llama-3.2",   "contextLimit": 131072 },
+    { "prefix": "llama-3.1",   "contextLimit": 131072 },
+    { "prefix": "mixtral-8x7b", "contextLimit": 32768 },
+    { "prefix": "gemma4",      "contextLimit": 131072, "tier": "mid" },
+    { "prefix": "gemma3",      "contextLimit": 131072 },
+    { "prefix": "gemma2",      "contextLimit": 8192 },
+    { "prefix": "gemma",       "contextLimit": 8192 },
+
+    { "prefix": "kimi-k3",          "contextLimit": 1000000, "tier": "full" },
+    { "prefix": "kimi-k2",          "contextLimit": 262144,  "tier": "full" },
+    { "prefix": "moonshot-v1-128k", "contextLimit": 131072,  "tier": "full" },
+    { "prefix": "moonshot-v1-32k",  "contextLimit": 32768,   "tier": "mid"  },
+    { "prefix": "moonshot-v1-8k",   "contextLimit": 8192,    "tier": "slim" },
+
+    { "prefix": "gpt-oss",  "contextLimit": 32768 },
+    { "prefix": "qwen3",    "contextLimit": 131072, "tier": "full" },
+    { "prefix": "qwen2.5",  "contextLimit": 131072 },
+    { "prefix": "llama3.3", "contextLimit": 131072 },
+    { "prefix": "llama3.2", "contextLimit": 131072 },
+    { "prefix": "llama3.1", "contextLimit": 131072 },
+    { "prefix": "llama3",   "contextLimit": 8192 },
+    { "prefix": "phi4",     "contextLimit": 131072 },
+    { "prefix": "phi3",     "contextLimit": 131072 },
+    { "prefix": "mistral",  "contextLimit": 32768 },
+
+    { "prefix": "deepseek-r1:70b",  "contextLimit": 131072 },
+    { "prefix": "deepseek-r1:32b",  "contextLimit": 131072 },
+    { "prefix": "deepseek-r1:14b",  "contextLimit": 131072 },
+    { "prefix": "deepseek-r1:8b",   "contextLimit": 131072 },
+    { "prefix": "deepseek-r1:7b",   "contextLimit": 131072 },
+    { "prefix": "deepseek-r1:1.5b", "contextLimit": 131072 }
+  ]
+}

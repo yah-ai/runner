@@ -1,0 +1,31 @@
+[package]
+name = "yah-runner-pv"
+version = "0.8.43"
+edition = "2021"
+authors = ["yah Dev <human@yah.dev>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yah-ai/runner"
+description = "Claude -p process-cell (pv) host for the yah agent runner"
+readme = "../../README.md"
+keywords = ["agent", "llm", "runtime"]
+categories = ["development-tools"]
+
+[dependencies]
+yah-runner-core = { version = "0.8.43", path = "../core" }
+tokio = { version = "1", default-features = false, features = ["fs", "net", "process", "io-util", "rt", "sync", "time", "macros"] }
+futures-core = "0.3"
+blake3 = "1.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+async-trait = "0.1"
+tracing = "0.1"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["io-std", "io-util", "macros", "rt", "rt-multi-thread", "time"] }
+tempfile = "3"
+# Dev-only: the example MCP stdio server proving a non-yah consumer can hand
+# claude -p tools via --mcp-config. pv never links it at runtime.
+yah-runner-mcp = { version = "0.8.43", path = "../mcp" }

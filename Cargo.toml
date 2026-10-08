@@ -1,0 +1,67 @@
+# Independent workspace (root excludes oss/). No `workspace = true` inheritance
+# from yah's root: each crate is self-contained so it builds standalone in the
+# exported mirror.
+#
+# @yah:ticket(R951-T1, "Scaffold oss/runner/crates/pv (yah-runner-pv, MIT OR Apache-2.0) depending only on yah-runner-core + tokio/serde; root [patch.crates-io] entry")
+# @yah:at(2026-10-05T19:03:32Z)
+# @yah:status(review)
+# @yah:assignee(agent:bundle-anthropic-ashguard)
+# @yah:parent(R951)
+# @yah:next("Add crates/pv to oss/runner members (oss/runner/Cargo.toml:5-10), mirror T1's per-crate manifest shape; deps: yah-runner-core, tokio (process, io-util, rt, time), serde, serde_json, async-trait, tracing; libc for process-group kill (unix). Package name yah-runner-pv - check the crates.io index 404s first as R950 did for the others.")
+# @yah:next("Add yah-runner-pv to the root [patch.crates-io] path block. No export-oss.sh change (oss/runner already has one entry).")
+# @yah:next("Tier: Thief - manifest scaffold mirroring T1.")
+# @yah:verify("cd oss/runner && cargo check -p yah-runner-pv")
+# @yah:verify("cd oss/runner && cargo tree -p yah-runner-pv -e normal | grep -cE 'yah-(board|party|kg|fob|bridge)' -> 0")
+# @yah:depends_on(R950-T1)
+# @yah:files(oss/runner/Cargo.toml)
+# @yah:files(oss/runner/crates/pv/Cargo.toml)
+# @yah:files(oss/runner/crates/pv/src/lib.rs)
+# @yah:files(Cargo.toml)
+# @yah:handoff("Scaffolded oss/runner/crates/pv (yah-runner-pv, MIT OR Apache-2.0): Cargo.toml (yah-runner-core, tokio, serde, serde_json, async-trait, tracing; libc unix-only), src/lib.rs crate doc, src/host.rs PvHost stub for F2. Added to oss/runner members and root [patch.crates-io] (Cargo.toml:862). crates.io index 404 confirmed by courier @Quill:griffin (session:6e89d381).")
+# @yah:verify("Leader re-run: cd oss/runner && cargo check -p yah-runner-pv -> EXIT=0; cargo tree -p yah-runner-pv -e normal | grep -cE 'yah-(board|party|kg|fob|bridge)|tauri' -> 0.")
+#
+# @yah:ticket(R951-T4, "pv gates: dep-tree gate, fixture stream-json replay test, MCP-stdio tool smoke with a yah-runner-mcp example server")
+# @yah:status(review)
+# @yah:at(2026-10-05T20:02:25Z)
+# @yah:assignee(agent:bundle-anthropic-miravel)
+# @yah:parent(R951)
+# @yah:next("Replay test: a recorded claude -p stream-json fixture (init, stream_event deltas, assistant tool_use, user tool_result, result) through yah_runner_pv::translate -> assert the core AgentEvent sequence. No claude binary needed.")
+# @yah:next("Example: ~40-line MCP stdio server on yah_runner_mcp::McpServer exposing one tool over a core ToolRegistry, plus a PvHost whose mcp_config_path points at it - documents how a non-yah consumer gives claude -p tools. A live-claude smoke is #[ignore]d (needs auth).")
+# @yah:next("Gate: cargo tree -p yah-runner-pv has none of yah-(board|party|kg|fob|bridge)/tauri; wire next to R950-T11's QED step if it exists by then. pv is NOT added to the wasm/iOS targets (it spawns processes).")
+# @yah:next("Tier: Cleric - tests and a gate over a landed API.")
+# @yah:verify("cd oss/runner && cargo test -p yah-runner-pv")
+# @yah:verify("cd oss/runner && cargo build -p yah-runner-pv --examples")
+# @yah:depends_on(R951-F3)
+# @yah:depends_on(R950-T8)
+# @yah:files(oss/runner/crates/pv/tests/replay.rs)
+# @yah:files(oss/runner/crates/pv/examples/mcp_tool_server.rs)
+# @yah:files(.yah/qed/yah-check.toml)
+# @yah:handoff("Added crates/pv/tests/replay.rs + tests/fixtures/claude_p_tool_turn.jsonl: hand-built claude -p stream replayed through StreamReader, asserting exact core sequence (TurnStarted, ThinkingDelta, MessageDelta x2, AssistantText, ToolCall, ToolResult, MessageDelta, AssistantText, TurnEnded w/ usage).")
+# @yah:handoff("Added #[ignore]d tests/live_claude.rs: real claude -p with a PvHost whose mcp_config_path launches the example server (found at target/<profile>/examples/mcp_tool_server); asserts ToolCall mcp__echo__echo + ToolResult. NOT run (needs auth); -p mode may deny the MCP tool without a permission mode, the assertion tolerates is_error results.")
+# @yah:handoff("Example already wires PvHost.mcp_config_path to its own binary (F2); left unchanged.")
+# @yah:handoff("Gate: scripts/check-runner-pv-deps.sh (cargo tree -p yah-runner-pv -e normal, forbids yah-(board|party|kg|fob|bridge)* and tauri*, FORBIDDEN_RE overridable) + step runner-pv-deps appended to .yah/qed/yah-check.toml after runner-targets. pv not added to wasm/iOS check.")
+# @yah:verify("cd oss/runner && cargo test -p yah-runner-pv: 87 unit (baseline) + 1 replay passed + 1 live ignored")
+# @yah:verify("cargo build -p yah-runner-pv --examples: exit 0")
+# @yah:verify("cargo clippy -p yah-runner-pv --all-targets --no-deps -- -D warnings: exit 0")
+# @yah:verify("bash scripts/check-runner-pv-deps.sh: ok, 139 crates; FORBIDDEN_RE='^yah-runner-core v' makes it exit 1 (reverted, env-only)")
+[workspace]
+members = [
+    "crates/core",
+    "crates/ho",
+    "crates/ha",
+    "crates/mcp",
+    "crates/pv",
+    "crates/stub",
+]
+resolver = "2"
+package = { version = "0.8.43" }
+
+# --- profiles: keep in lockstep with the yah monorepo root Cargo.toml ---
+# (sccache keys include rustc flags; see oss/srcgraph/Cargo.toml for the why.)
+[profile.dev]
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+debug = false
+opt-level = 1
+incremental = false

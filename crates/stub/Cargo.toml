@@ -1,0 +1,21 @@
+[package]
+name = "yah-runner-stub"
+version = "0.8.43"
+edition = "2021"
+authors = ["yah Dev <human@yah.dev>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yah-ai/runner"
+description = "Test-support: the one fake inference wire server (OpenAI chat-completions + Anthropic Messages) the yah runner suites and e2e scenarios share"
+publish = false
+
+[dependencies]
+anyhow = "1.0"
+axum = "0.8"
+blake3 = "1.5"
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["macros", "net", "rt", "rt-multi-thread", "sync", "time"] }
+
+[dev-dependencies]
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream"] }

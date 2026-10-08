@@ -1,0 +1,26 @@
+[package]
+name = "yah-runner-mcp"
+version = "0.8.43"
+edition = "2021"
+authors = ["yah Dev <human@yah.dev>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yah-ai/runner"
+description = "MCP integration for the yah agent runner"
+readme = "../../README.md"
+keywords = ["agent", "llm", "runtime"]
+categories = ["development-tools"]
+
+[dependencies]
+yah-runner-core = { path = "../core", version = "0.8.43", default-features = false }
+async-trait = "0.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["io-util", "rt"] }
+
+# R950-T11: stdin/stdout exist off wasm32 only (tokio rejects `io-std` there),
+# so `serve_stdio` is cfg'd the same way.
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tokio = { version = "1", features = ["io-std"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["io-util", "macros", "rt", "rt-multi-thread", "sync", "time"] }

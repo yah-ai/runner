@@ -1,0 +1,855 @@
+{
+  "fetched_at": "2026-05-21T16:57:08Z",
+  "entries": [
+    {
+      "id": "tencent/hy3-preview",
+      "permaslug": "tencent/hy3-preview-20260421",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 6.6e-08,
+      "price_completion_usd_per_token": 2.6e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 1,
+      "weekly_requests": 67303595,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "permaslug": "deepseek/deepseek-v4-flash-20260423",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 1.12e-07,
+      "price_completion_usd_per_token": 2.24e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 2,
+      "weekly_requests": 163017513,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.6",
+      "permaslug": "anthropic/claude-4.6-sonnet-20260217",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 3e-06,
+      "price_completion_usd_per_token": 1.5e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 3,
+      "weekly_requests": 47650974,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "anthropic/claude-opus-4.7",
+      "permaslug": "anthropic/claude-4.7-opus-20260416",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 5e-06,
+      "price_completion_usd_per_token": 2.5e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 4,
+      "weekly_requests": 32711651,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openrouter/owl-alpha",
+      "permaslug": "openrouter/owl-alpha",
+      "context_length": 1048756,
+      "price_prompt_usd_per_token": 0.0,
+      "price_completion_usd_per_token": 0.0,
+      "is_free": true,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context"
+      ],
+      "popularity_rank": 5,
+      "weekly_requests": 39794989,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-3-flash-preview",
+      "permaslug": "google/gemini-3-flash-preview-20251217",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 5e-07,
+      "price_completion_usd_per_token": 3e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 6,
+      "weekly_requests": 155874453,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "deepseek/deepseek-v3.2",
+      "permaslug": "deepseek/deepseek-v3.2-20251201",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 2.52e-07,
+      "price_completion_usd_per_token": 3.78e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 7,
+      "weekly_requests": 126360500,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "permaslug": "deepseek/deepseek-v4-pro-20260423",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 4.35e-07,
+      "price_completion_usd_per_token": 8.7e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 8,
+      "weekly_requests": 35243393,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "stepfun/step-3.5-flash",
+      "permaslug": "stepfun/step-3.5-flash",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 9e-08,
+      "price_completion_usd_per_token": 3e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 9,
+      "weekly_requests": 14590086,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "moonshotai/kimi-k2.6",
+      "permaslug": "moonshotai/kimi-k2.6-20260420",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 7.3e-07,
+      "price_completion_usd_per_token": 3.49e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 10,
+      "weekly_requests": 19672795,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "minimax/minimax-m2.7",
+      "permaslug": "minimax/minimax-m2.7-20260318",
+      "context_length": 204800,
+      "price_prompt_usd_per_token": 2.79e-07,
+      "price_completion_usd_per_token": 1.2e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 11,
+      "weekly_requests": 25943644,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "permaslug": "nvidia/nemotron-3-super-120b-a12b-20230311",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 0.0,
+      "price_completion_usd_per_token": 0.0,
+      "is_free": true,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 12,
+      "weekly_requests": 15573049,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-2.5-flash",
+      "permaslug": "google/gemini-2.5-flash",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 3e-07,
+      "price_completion_usd_per_token": 2.5e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 13,
+      "weekly_requests": 171377213,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite",
+      "permaslug": "google/gemini-2.5-flash-lite",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 1e-07,
+      "price_completion_usd_per_token": 4e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 14,
+      "weekly_requests": 220153055,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "anthropic/claude-opus-4.6",
+      "permaslug": "anthropic/claude-4.6-opus-20260205",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 5e-06,
+      "price_completion_usd_per_token": 2.5e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 15,
+      "weekly_requests": 12582732,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-3.1-pro-preview",
+      "permaslug": "google/gemini-3.1-pro-preview-20260219",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 2e-06,
+      "price_completion_usd_per_token": 1.2e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 16,
+      "weekly_requests": 23106157,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-5.5",
+      "permaslug": "openai/gpt-5.5-20260423",
+      "context_length": 1050000,
+      "price_prompt_usd_per_token": 5e-06,
+      "price_completion_usd_per_token": 3e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 17,
+      "weekly_requests": 12052399,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-oss-120b",
+      "permaslug": "openai/gpt-oss-120b",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 3.9e-08,
+      "price_completion_usd_per_token": 1.8e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 18,
+      "weekly_requests": 113444130,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "permaslug": "z-ai/glm-5.1-20260406",
+      "context_length": 202752,
+      "price_prompt_usd_per_token": 9.8e-07,
+      "price_completion_usd_per_token": 3.08e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 19,
+      "weekly_requests": 19392511,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite-preview",
+      "permaslug": "google/gemini-3.1-flash-lite-preview-20260303",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 2.5e-07,
+      "price_completion_usd_per_token": 1.5e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 20,
+      "weekly_requests": 83157230,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "permaslug": "openai/gpt-4o-mini",
+      "context_length": 128000,
+      "price_prompt_usd_per_token": 1.5e-07,
+      "price_completion_usd_per_token": 6e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision"
+      ],
+      "popularity_rank": 21,
+      "weekly_requests": 139790373,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemma-4-31b-it",
+      "permaslug": "google/gemma-4-31b-it-20260402",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 1.2e-07,
+      "price_completion_usd_per_token": 3.7e-07,
+      "is_free": false,
+      "capability_tags": [
+        "vision",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 22,
+      "weekly_requests": 57613127,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-5.4",
+      "permaslug": "openai/gpt-5.4-20260305",
+      "context_length": 1050000,
+      "price_prompt_usd_per_token": 2.5e-06,
+      "price_completion_usd_per_token": 1.5e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 23,
+      "weekly_requests": 16974070,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "poolside/laguna-m.1:free",
+      "permaslug": "poolside/laguna-m.1-20260312",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 0.0,
+      "price_completion_usd_per_token": 0.0,
+      "is_free": true,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 24,
+      "weekly_requests": 5532642,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "moonshotai/kimi-k2.5",
+      "permaslug": "moonshotai/kimi-k2.5-0127",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 4e-07,
+      "price_completion_usd_per_token": 1.9e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 25,
+      "weekly_requests": 12588788,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "anthropic/claude-haiku-4.5",
+      "permaslug": "anthropic/claude-4.5-haiku-20251001",
+      "context_length": 200000,
+      "price_prompt_usd_per_token": 1e-06,
+      "price_completion_usd_per_token": 5e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 26,
+      "weekly_requests": 30243555,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "qwen/qwen3.6-plus",
+      "permaslug": "qwen/qwen3.6-plus-04-02",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 3.25e-07,
+      "price_completion_usd_per_token": 1.95e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 27,
+      "weekly_requests": 7945372,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "minimax/minimax-m2.5",
+      "permaslug": "minimax/minimax-m2.5-20260211",
+      "context_length": 204800,
+      "price_prompt_usd_per_token": 1.5e-07,
+      "price_completion_usd_per_token": 1.15e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 28,
+      "weekly_requests": 12396729,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it",
+      "permaslug": "google/gemma-4-26b-a4b-it-20260403",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 6e-08,
+      "price_completion_usd_per_token": 3.3e-07,
+      "is_free": false,
+      "capability_tags": [
+        "vision",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 29,
+      "weekly_requests": 121444051,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "z-ai/glm-4.7",
+      "permaslug": "z-ai/glm-4.7-20251222",
+      "context_length": 202752,
+      "price_prompt_usd_per_token": 4e-07,
+      "price_completion_usd_per_token": 1.75e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 30,
+      "weekly_requests": 8228312,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-5-mini",
+      "permaslug": "openai/gpt-5-mini-2025-08-07",
+      "context_length": 400000,
+      "price_prompt_usd_per_token": 2.5e-07,
+      "price_completion_usd_per_token": 2e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 31,
+      "weekly_requests": 23083231,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "xiaomi/mimo-v2.5-pro",
+      "permaslug": "xiaomi/mimo-v2.5-pro-20260422",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 1e-06,
+      "price_completion_usd_per_token": 3e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 32,
+      "weekly_requests": 2744389,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite",
+      "permaslug": "google/gemini-3.1-flash-lite-20260507",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 2.5e-07,
+      "price_completion_usd_per_token": 1.5e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 33,
+      "weekly_requests": 34706347,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-oss-120b:free",
+      "permaslug": "openai/gpt-oss-120b",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 0.0,
+      "price_completion_usd_per_token": 0.0,
+      "is_free": true,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 34,
+      "weekly_requests": 16603976,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "anthropic/claude-sonnet-4.5",
+      "permaslug": "anthropic/claude-4.5-sonnet-20250929",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 3e-06,
+      "price_completion_usd_per_token": 1.5e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 35,
+      "weekly_requests": 11058127,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "mistralai/mistral-nemo",
+      "permaslug": "mistralai/mistral-nemo",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 2e-08,
+      "price_completion_usd_per_token": 3e-08,
+      "is_free": false,
+      "capability_tags": [],
+      "popularity_rank": 36,
+      "weekly_requests": 60511714,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-5.4-mini",
+      "permaslug": "openai/gpt-5.4-mini-20260317",
+      "context_length": 400000,
+      "price_prompt_usd_per_token": 7.5e-07,
+      "price_completion_usd_per_token": 4.5e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 37,
+      "weekly_requests": 24220181,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "z-ai/glm-4.5-air",
+      "permaslug": "z-ai/glm-4.5-air",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 1.3e-07,
+      "price_completion_usd_per_token": 8.5e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 38,
+      "weekly_requests": 54762955,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "z-ai/glm-5",
+      "permaslug": "z-ai/glm-5-20260211",
+      "context_length": 202752,
+      "price_prompt_usd_per_token": 6e-07,
+      "price_completion_usd_per_token": 1.92e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 39,
+      "weekly_requests": 7081122,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "permaslug": "qwen/qwen3-235b-a22b-07-25",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 7.1e-08,
+      "price_completion_usd_per_token": 1e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "long-context"
+      ],
+      "popularity_rank": 40,
+      "weekly_requests": 32602893,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "qwen/qwen3.5-397b-a17b",
+      "permaslug": "qwen/qwen3.5-397b-a17b-20260216",
+      "context_length": 262144,
+      "price_prompt_usd_per_token": 3.9e-07,
+      "price_completion_usd_per_token": 2.34e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 41,
+      "weekly_requests": 7927719,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "qwen/qwen3.5-flash-02-23",
+      "permaslug": "qwen/qwen3.5-flash-20260224",
+      "context_length": 1000000,
+      "price_prompt_usd_per_token": 6.5e-08,
+      "price_completion_usd_per_token": 2.6e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 42,
+      "weekly_requests": 27956865,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-5.3-codex",
+      "permaslug": "openai/gpt-5.3-codex-20260224",
+      "context_length": 400000,
+      "price_prompt_usd_per_token": 1.75e-06,
+      "price_completion_usd_per_token": 1.4e-05,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 43,
+      "weekly_requests": 2015334,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "xiaomi/mimo-v2.5",
+      "permaslug": "xiaomi/mimo-v2.5-20260422",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 4e-07,
+      "price_completion_usd_per_token": 2e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 44,
+      "weekly_requests": 2596812,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "permaslug": "openai/gpt-4.1-mini-2025-04-14",
+      "context_length": 1047576,
+      "price_prompt_usd_per_token": 4e-07,
+      "price_completion_usd_per_token": 1.6e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context"
+      ],
+      "popularity_rank": 45,
+      "weekly_requests": 32602206,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "permaslug": "meta-llama/llama-3.1-8b-instruct",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 2e-08,
+      "price_completion_usd_per_token": 5e-08,
+      "is_free": false,
+      "capability_tags": [],
+      "popularity_rank": 46,
+      "weekly_requests": 87306730,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "google/gemini-3.5-flash",
+      "permaslug": "google/gemini-3.5-flash-20260519",
+      "context_length": 1048576,
+      "price_prompt_usd_per_token": 1.5e-06,
+      "price_completion_usd_per_token": 9e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 47,
+      "weekly_requests": 4008498,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "z-ai/glm-4.5-air:free",
+      "permaslug": "z-ai/glm-4.5-air",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 0.0,
+      "price_completion_usd_per_token": 0.0,
+      "is_free": true,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 48,
+      "weekly_requests": 4648006,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-oss-20b",
+      "permaslug": "openai/gpt-oss-20b",
+      "context_length": 131072,
+      "price_prompt_usd_per_token": 3e-08,
+      "price_completion_usd_per_token": 1.4e-07,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "tool-use",
+        "reasoning"
+      ],
+      "popularity_rank": 49,
+      "weekly_requests": 30859720,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    },
+    {
+      "id": "openai/gpt-5.4-nano",
+      "permaslug": "openai/gpt-5.4-nano-20260317",
+      "context_length": 400000,
+      "price_prompt_usd_per_token": 2e-07,
+      "price_completion_usd_per_token": 1.25e-06,
+      "is_free": false,
+      "capability_tags": [
+        "code",
+        "vision",
+        "tool-use",
+        "long-context",
+        "reasoning"
+      ],
+      "popularity_rank": 50,
+      "weekly_requests": 17909916,
+      "last_seen_at": "2026-05-21T16:57:08Z"
+    }
+  ]
+}
