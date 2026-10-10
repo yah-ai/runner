@@ -1,6 +1,6 @@
 [package]
 name = "yah-runner-ha"
-version = "0.8.45"
+version = "0.8.46"
 edition = "2021"
 authors = ["yah Dev <human@yah.dev>"]
 license = "MIT OR Apache-2.0"
@@ -11,7 +11,7 @@ keywords = ["agent", "llm", "runtime"]
 categories = ["development-tools"]
 
 [dependencies]
-yah-runner-core = { version = "0.8.45", path = "../core", default-features = false }
+yah-runner-core = { version = "0.8.46", path = "../core", default-features = false }
 
 async-trait = "0.1"
 futures = "0.3"

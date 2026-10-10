@@ -1,6 +1,6 @@
 [package]
 name = "yah-runner-ho"
-version = "0.8.45"
+version = "0.8.46"
 edition = "2021"
 authors = ["yah Dev <human@yah.dev>"]
 license = "MIT OR Apache-2.0"
@@ -18,7 +18,7 @@ default = ["reqwest"]
 reqwest = ["yah-runner-core/reqwest"]
 
 [dependencies]
-yah-runner-core = { version = "0.8.45", path = "../core", default-features = false }
+yah-runner-core = { version = "0.8.46", path = "../core", default-features = false }
 
 async-stream = "0.3"
 async-trait = "0.1"

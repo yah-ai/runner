@@ -1,6 +1,6 @@
 [package]
 name = "yah-runner-pv"
-version = "0.8.45"
+version = "0.8.46"
 edition = "2021"
 authors = ["yah Dev <human@yah.dev>"]
 license = "MIT OR Apache-2.0"
@@ -11,7 +11,7 @@ keywords = ["agent", "llm", "runtime"]
 categories = ["development-tools"]
 
 [dependencies]
-yah-runner-core = { version = "0.8.45", path = "../core" }
+yah-runner-core = { version = "0.8.46", path = "../core" }
 tokio = { version = "1", default-features = false, features = ["fs", "net", "process", "io-util", "rt", "sync", "time", "macros"] }
 futures-core = "0.3"
 blake3 = "1.5"
@@ -28,4 +28,4 @@ tokio = { version = "1", features = ["io-std", "io-util", "macros", "rt", "rt-mu
 tempfile = "3"
 # Dev-only: the example MCP stdio server proving a non-yah consumer can hand
 # claude -p tools via --mcp-config. pv never links it at runtime.
-yah-runner-mcp = { version = "0.8.45", path = "../mcp" }
+yah-runner-mcp = { version = "0.8.46", path = "../mcp" }
