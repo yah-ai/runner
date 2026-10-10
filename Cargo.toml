@@ -54,7 +54,7 @@ members = [
     "crates/stub",
 ]
 resolver = "2"
-package = { version = "0.8.43" }
+package = { version = "0.8.45" }
 
 # --- profiles: keep in lockstep with the yah monorepo root Cargo.toml ---
 # (sccache keys include rustc flags; see oss/srcgraph/Cargo.toml for the why.)
